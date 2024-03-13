@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(Occupation,{full},{empty})" org.eventb.core.source="/RobotPharmacie/PharmaContexte.buc|org.eventb.core.contextFile#PharmaContexte|org.eventb.core.axiom#*" org.eventb.core.theorem="false"/>
+<org.eventb.core.scCarrierSet name="Occupation" org.eventb.core.source="/RobotPharmacie/PharmaContexte.buc|org.eventb.core.contextFile#PharmaContexte|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(Occupation)"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="empty" org.eventb.core.source="/RobotPharmacie/PharmaContexte.buc|org.eventb.core.contextFile#PharmaContexte|org.eventb.core.constant#)" org.eventb.core.type="Occupation"/>
+<org.eventb.core.scConstant de.prob.symbolic.symbolicAttribute="false" name="full" org.eventb.core.source="/RobotPharmacie/PharmaContexte.buc|org.eventb.core.contextFile#PharmaContexte|org.eventb.core.constant#(" org.eventb.core.type="Occupation"/>
+</org.eventb.core.scContextFile>

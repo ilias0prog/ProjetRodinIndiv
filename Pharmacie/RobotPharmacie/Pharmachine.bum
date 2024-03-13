@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+<org.eventb.core.action name="-" org.eventb.core.assignment="B1 ≔ 0‥1 × {0}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="." org.eventb.core.assignment="B2 ≔ 0‥1 × {0}" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="1" org.eventb.core.assignment="E ≔ 0" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="2" org.eventb.core.assignment="med_in ≔ 0" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="4" org.eventb.core.assignment="med_out ≔ 0" org.eventb.core.label="act6"/>
+<org.eventb.core.action name="5" org.eventb.core.assignment="req ≔ 0" org.eventb.core.label="act7"/>
+<org.eventb.core.action name="6" org.eventb.core.assignment="shelves ≔ 1‥6 × {0‥1 × {0}}" org.eventb.core.label="act8"/>
+<org.eventb.core.action name="7" org.eventb.core.assignment="E_level ≔ 0" org.eventb.core.label="act9"/>
+</org.eventb.core.event>
+<org.eventb.core.seesContext name="." org.eventb.core.target="PharmaContexte"/>
+<org.eventb.core.variable name="5" org.eventb.core.comment="First conveyor content" org.eventb.core.identifier="B1"/>
+<org.eventb.core.variable name="6" org.eventb.core.comment="Second conveyor content" org.eventb.core.identifier="B2"/>
+<org.eventb.core.variable name="7" org.eventb.core.comment="Elevator content" org.eventb.core.identifier="E"/>
+<org.eventb.core.invariant name="=" org.eventb.core.label="inv9" org.eventb.core.predicate="E ∈ 0‥6"/>
+<org.eventb.core.invariant name="?" org.eventb.core.comment="Type of med on each B1 spot (0 if no med)" org.eventb.core.label="inv11" org.eventb.core.predicate="B1 ∈ (0‥1 → 0‥6)"/>
+<org.eventb.core.event name="@" org.eventb.core.comment="Brings a new med on the B1 conveyor (activates the B1 conveyor to the right)" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Medicament_in">
+<org.eventb.core.guard name="'" org.eventb.core.comment="To add a new med, med_in must be set to no new med" org.eventb.core.label="grd1" org.eventb.core.predicate="med_in = 0"/>
+<org.eventb.core.guard name="(" org.eventb.core.comment="First spot of B1 must be free" org.eventb.core.label="grd2" org.eventb.core.predicate="B1(0) = 0"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="med_in ≔ medType" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="B1(0) ≔ medType" org.eventb.core.comment="Set first spot of B1 to full" org.eventb.core.label="act2"/>
+<org.eventb.core.parameter name="-" org.eventb.core.identifier="medType"/>
+<org.eventb.core.guard name="." org.eventb.core.label="grd3" org.eventb.core.predicate="medType ∈ 1‥6"/>
+<org.eventb.core.guard name="/" org.eventb.core.comment="To bring a med of type medType in the system, there must be less than 2 of them already" org.eventb.core.label="comment" org.eventb.core.predicate="⊤" org.eventb.core.theorem="true"/>
+<org.eventb.core.guard name="0" org.eventb.core.comment="Case 1 : the shelf of this type is full ( If the second spot of the shelf is full then there are 2 meds of this type in the system )" org.eventb.core.label="grd4" org.eventb.core.predicate="¬(shelves(medType)(1) = medType) "/>
+<org.eventb.core.guard name="1" org.eventb.core.comment="Case 2 : B1(0) and B1(1)" org.eventb.core.label="grd5" org.eventb.core.predicate="¬(B1(0) = medType ∧ B1(1) = medType)"/>
+<org.eventb.core.guard name="2" org.eventb.core.comment="Case 3 : B1(0) and E" org.eventb.core.label="grd6" org.eventb.core.predicate="¬(B1(0) = medType ∧ E = medType)"/>
+<org.eventb.core.guard name="3" org.eventb.core.comment="Case 4 : B1(1) and E" org.eventb.core.label="grd7" org.eventb.core.predicate="¬(B1(1) = medType ∧ E = medType)"/>
+<org.eventb.core.guard name="5" org.eventb.core.comment="case 5 : shelf(0) and B1(0)" org.eventb.core.label="grd8" org.eventb.core.predicate="¬(shelves(medType)(0) = medType ∧ B1(0) = medType)"/>
+<org.eventb.core.guard name="6" org.eventb.core.comment="case 6 : shelf(1) and B1(0)" org.eventb.core.label="grd9" org.eventb.core.predicate="¬(shelves(medType)(1) = medType ∧ B1(0) = medType)"/>
+<org.eventb.core.guard name="7" org.eventb.core.comment="case 7 : shelf(0) and B1(1)" org.eventb.core.label="grd10" org.eventb.core.predicate="¬(shelves(medType)(0) = medType ∧ B1(1) = medType)"/>
+<org.eventb.core.guard name="8" org.eventb.core.comment="case 8 : shelf(1) and B1(1)" org.eventb.core.label="grd11" org.eventb.core.predicate="¬(shelves(medType)(1) = medType ∧ B1(1) = medType)"/>
+<org.eventb.core.guard name="9" org.eventb.core.comment="case 9 : shelf(0) and E" org.eventb.core.label="grd12" org.eventb.core.predicate="¬(shelves(medType)(0) = medType ∧ E = medType)"/>
+<org.eventb.core.guard name=":" org.eventb.core.comment="case 10 : shelf(1) and E" org.eventb.core.label="grd13" org.eventb.core.predicate="¬(shelves(medType)(1) = medType ∧ E = medType)"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="A" org.eventb.core.identifier="med_in"/>
+<org.eventb.core.invariant name="B" org.eventb.core.comment="0 value means no med" org.eventb.core.label="inv12" org.eventb.core.predicate="med_in ∈ 0‥6"/>
+<org.eventb.core.variable name="E" org.eventb.core.identifier="med_out"/>
+<org.eventb.core.variable name="F" org.eventb.core.identifier="req"/>
+<org.eventb.core.invariant name="G" org.eventb.core.comment="0 value means no med " org.eventb.core.label="inv14" org.eventb.core.predicate="med_out ∈ 0‥6"/>
+<org.eventb.core.invariant name="H" org.eventb.core.comment="0 value means no med " org.eventb.core.label="inv15" org.eventb.core.predicate="req ∈ 0‥6"/>
+<org.eventb.core.event name="I" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Request">
+<org.eventb.core.guard name=")" org.eventb.core.comment="medType must be among the 6 types" org.eventb.core.label="grd2" org.eventb.core.predicate="medType ∈ 1‥6"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="req ≔ medType" org.eventb.core.comment="Set req to the requested type" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="-" org.eventb.core.comment="To request a med of type medType, I need to have one in one of the following positions :" org.eventb.core.label="comment" org.eventb.core.predicate="⊤" org.eventb.core.theorem="true"/>
+<org.eventb.core.guard name="." org.eventb.core.comment="shelves(medType)(0) or B1(0) or B1(1) or E" org.eventb.core.label="grd3" org.eventb.core.predicate="shelves(medType)(0) ≠ 0 ∨ B1(0) = medType ∨ B1(1) = medType ∨ E = medType"/>
+<org.eventb.core.parameter name="1" org.eventb.core.comment="The type of med to request" org.eventb.core.identifier="medType"/>
+<org.eventb.core.guard name="2" org.eventb.core.comment="Request system is available" org.eventb.core.label="grd4" org.eventb.core.predicate="req = 0"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="J" org.eventb.core.comment="Shelves content (list of 6 lists of 2 values (type of the med, 0 -&gt; no med) )" org.eventb.core.identifier="shelves"/>
+<org.eventb.core.invariant name="K" org.eventb.core.label="inv16" org.eventb.core.predicate="shelves ∈ 1‥6 → (0‥1 → 0‥6)"/>
+<org.eventb.core.invariant name="L" org.eventb.core.comment="Type of med on each B2 spot (0 if no med)" org.eventb.core.label="inv17" org.eventb.core.predicate="B2 ∈ (0‥1 → 0‥6)"/>
+<org.eventb.core.variable name="O" org.eventb.core.comment="Level of the elevator" org.eventb.core.identifier="E_level"/>
+<org.eventb.core.invariant name="P" org.eventb.core.label="inv18" org.eventb.core.predicate="E_level ∈ 0‥6"/>
+<org.eventb.core.event name="S" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Move_elevator_to">
+<org.eventb.core.parameter name="'" org.eventb.core.identifier="targetLevel"/>
+<org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="targetLevel ∈ 0‥6"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="E_level ≔ targetLevel" org.eventb.core.label="goToLvl"/>
+<org.eventb.core.guard name="*" org.eventb.core.comment="The elevator isn't already at that level" org.eventb.core.label="grd2" org.eventb.core.predicate="E_level ≠ targetLevel"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="T" org.eventb.core.comment="Pushes out a med (activates the B1 conveyor to the left)" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Medicament_out">
+<org.eventb.core.guard name="'" org.eventb.core.comment="The med we are trying to push out of the system is the right type of med" org.eventb.core.label="grd1" org.eventb.core.predicate="B2(1) = med_out"/>
+<org.eventb.core.action name="(" org.eventb.core.assignment="med_out ≔ 0" org.eventb.core.comment="Set med_out to default value" org.eventb.core.label="act1"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="B2(1) ≔ 0" org.eventb.core.comment="Set the second spot of the B2 conveyor to O (no med)" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="*" org.eventb.core.comment="The second spot of B2 isnt empty" org.eventb.core.label="grd2" org.eventb.core.predicate="B2(1) ≠ 0"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="U" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Shelves_to_elevator">
+<org.eventb.core.guard name="'" org.eventb.core.comment="The elevator is empty" org.eventb.core.label="grd1" org.eventb.core.predicate="E = 0"/>
+<org.eventb.core.guard name=")" org.eventb.core.comment="The elevator is at the right level (lvl)" org.eventb.core.label="grd2" org.eventb.core.predicate="E_level = lvl"/>
+<org.eventb.core.guard name="+" org.eventb.core.comment="lvl must be one of the levels (1..6)" org.eventb.core.label="grd3" org.eventb.core.predicate="lvl ∈ 1‥6"/>
+<org.eventb.core.parameter name="-" org.eventb.core.comment="Shelf you want to fetch a med from" org.eventb.core.identifier="lvl"/>
+<org.eventb.core.action name="." org.eventb.core.assignment="shelves(lvl) ≔ shelves(lvl)  {0 ↦ shelves(lvl)(1) ,1 ↦ 0}" org.eventb.core.comment="Move 2nd med to the left (if there is one) and remove 1st med" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="/" org.eventb.core.assignment="E ≔ lvl" org.eventb.core.comment="Add the med to the elevator" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="0" org.eventb.core.comment="The med we're trying to fetch has been requested" org.eventb.core.label="grd4" org.eventb.core.predicate="shelves(lvl)(0) = req"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="V" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Elevator_to_shelves">
+<org.eventb.core.guard name="'" org.eventb.core.comment="The elevator is not empty" org.eventb.core.label="grd1" org.eventb.core.predicate="E = lvl"/>
+<org.eventb.core.guard name="(" org.eventb.core.comment="The elevator is at the right level" org.eventb.core.label="grd2" org.eventb.core.predicate="E_level = lvl"/>
+<org.eventb.core.parameter name=")" org.eventb.core.comment="Level where you want to put the med" org.eventb.core.identifier="lvl"/>
+<org.eventb.core.guard name="*" org.eventb.core.comment="lvl must be one of the levels (1..6)" org.eventb.core.label="grd3" org.eventb.core.predicate="lvl ∈ 1‥6"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="E ≔ 0" org.eventb.core.comment="Empty the elevator" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="," org.eventb.core.assignment="shelves(lvl) ≔ shelves(lvl)  {1 ↦ shelves(lvl)(0), 0 ↦  lvl}" org.eventb.core.comment="Move the med on the right spot of the shelf (if there is one) and add a new one" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="-" org.eventb.core.comment="The med has not been requested, if requested, we should not put it back on the shelf" org.eventb.core.label="grd4" org.eventb.core.predicate="lvl ≠ req"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="W" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="B1_to_elevator">
+<org.eventb.core.guard name="'" org.eventb.core.comment="The elevator is empty" org.eventb.core.label="grd1" org.eventb.core.predicate="E = 0"/>
+<org.eventb.core.guard name="(" org.eventb.core.comment="The elevator is at the level level (0)" org.eventb.core.label="grd2" org.eventb.core.predicate="E_level = 0"/>
+<org.eventb.core.guard name=")" org.eventb.core.comment="There is a med on B1(1)" org.eventb.core.label="grd3" org.eventb.core.predicate="B1(1) ≠ 0"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="E ≔ B1(1)" org.eventb.core.comment="Move the med from B1 to the elevator" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="+" org.eventb.core.assignment="B1 ≔ B1  {1 ↦ 0}" org.eventb.core.comment="Empty B1's 2nd spot" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="X" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Elevator_to_B2">
+<org.eventb.core.guard name="'" org.eventb.core.comment="The elevator is at the right level (0)" org.eventb.core.label="grd1" org.eventb.core.predicate="E_level = 0"/>
+<org.eventb.core.guard name="(" org.eventb.core.comment="B2(0) is empty" org.eventb.core.label="grd2" org.eventb.core.predicate="B2(0) = 0"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="B2 ≔ B2  {0 ↦ E}" org.eventb.core.comment="Copy the med on the elevator to B2" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="E ≔ 0" org.eventb.core.comment="Empty the elevator" org.eventb.core.label="act2"/>
+<org.eventb.core.guard name="+" org.eventb.core.comment="The elevator is not empty" org.eventb.core.label="grd3" org.eventb.core.predicate="E ≠ 0"/>
+<org.eventb.core.guard name="," org.eventb.core.comment="The med has been requested" org.eventb.core.label="grd4" org.eventb.core.predicate="E = req"/>
+<org.eventb.core.action name="-" org.eventb.core.assignment="med_out ≔ req" org.eventb.core.comment="The requested med is copied into med_out" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="." org.eventb.core.assignment="req ≔ 0" org.eventb.core.comment="Set req to default value" org.eventb.core.label="act4"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="Y" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Action_B1">
+<org.eventb.core.guard name="'" org.eventb.core.comment="There is a med on the first spot of B1" org.eventb.core.label="grd1" org.eventb.core.predicate="B1(0) ≠ 0"/>
+<org.eventb.core.guard name="(" org.eventb.core.comment="The second spot is empty" org.eventb.core.label="grd2" org.eventb.core.predicate="B1(1) = 0"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="B1 ≔ B1  {0 ↦ 0, 1 ↦ B1(0)}" org.eventb.core.comment="Move the med from the first spot to the second one" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="*" org.eventb.core.assignment="med_in ≔ 0" org.eventb.core.comment="Set med_in to default value" org.eventb.core.label="act2"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="Z" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Action_B2">
+<org.eventb.core.guard name="'" org.eventb.core.comment="There is a med on the first spot of B2" org.eventb.core.label="grd1" org.eventb.core.predicate="B2(0) ≠ 0"/>
+<org.eventb.core.guard name="(" org.eventb.core.comment="The second spot is empty" org.eventb.core.label="grd2" org.eventb.core.predicate="B2(1) = 0"/>
+<org.eventb.core.action name=")" org.eventb.core.assignment="B2 ≔ B2  {0 ↦ 0, 1 ↦ B2(0)}" org.eventb.core.comment="Move the med from the first spot to the second one" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="[" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Move_elevator_to_right_lvl">
+<org.eventb.core.action name="'" org.eventb.core.assignment="E_level ≔ E" org.eventb.core.label="act1"/>
+</org.eventb.core.event>
+</org.eventb.core.machineFile>
