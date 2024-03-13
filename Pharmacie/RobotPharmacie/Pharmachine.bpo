@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="Occupation" org.eventb.core.type="ℙ(Occupation)"/>
+<org.eventb.core.poIdentifier name="empty" org.eventb.core.type="Occupation"/>
+<org.eventb.core.poIdentifier name="full" org.eventb.core.type="Occupation"/>
+<org.eventb.core.poPredicate name="Occupatioo" org.eventb.core.predicate="partition(Occupation,{full},{empty})" org.eventb.core.source="/RobotPharmacie/PharmaContexte.buc|org.eventb.core.contextFile#PharmaContexte|org.eventb.core.axiom#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="B1" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="B2" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="E" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="E_level" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="req" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="shelves" org.eventb.core.type="ℙ(ℤ×ℙ(ℤ×ℤ))"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextl"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#="/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#="/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#INITIALISATION\/inv9\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextl"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0 ‥ 1 × {0}∈0 ‥ 1 → 0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#?"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#?"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#INITIALISATION\/inv11\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv15/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextl"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#H"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#H"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#INITIALISATION\/inv15\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv16/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextl"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1 ‥ 6 × {0 ‥ 1 × {0}}∈1 ‥ 6 → (0 ‥ 1 → 0 ‥ 6)" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#K"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#K"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#INITIALISATION\/inv16\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv17/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextl"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0 ‥ 1 × {0}∈0 ‥ 1 → 0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#L"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#L"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#INITIALISATION\/inv17\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv18/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextl"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#P"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#P"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#INITIALISATION\/inv18\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTPharmaContextl" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="B1'" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="E_level'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="req'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="E'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="B2'" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="shelves'" org.eventb.core.type="ℙ(ℤ×ℙ(ℤ×ℤ))"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPPharmaContextl" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTIDENTPharmaContextl" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poSequent name="Medicament_in/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTIDENTPharmaContextm"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈dom(B1)∧B1∈ℤ ⇸ ℤ" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#("/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#("/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTIDENTPharmaContextm"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Medicament_in/grd4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm)"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="medType∈dom(shelves)∧shelves∈ℤ ⇸ ℙ(ℤ × ℤ)∧1∈dom(shelves(medType))∧shelves(medType)∈ℤ ⇸ ℤ" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#0"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#0"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm)"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Medicament_in/grd5/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm*"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈dom(B1)∧B1∈ℤ ⇸ ℤ∧(B1(0)=medType⇒1∈dom(B1))" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#1"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#1"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm*"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Medicament_in/grd6/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm+"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈dom(B1)∧B1∈ℤ ⇸ ℤ" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#2"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#2"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm+"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Medicament_in/grd7/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm,"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1∈dom(B1)∧B1∈ℤ ⇸ ℤ" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#3"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#3"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm,"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Medicament_in/grd8/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm-"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="medType∈dom(shelves)∧shelves∈ℤ ⇸ ℙ(ℤ × ℤ)∧0∈dom(shelves(medType))∧shelves(medType)∈ℤ ⇸ ℤ∧(shelves(medType)(0)=medType⇒0∈dom(B1)∧B1∈ℤ ⇸ ℤ)" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#5"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#5"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm-"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Medicament_in/grd9/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm."/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="medType∈dom(shelves)∧shelves∈ℤ ⇸ ℙ(ℤ × ℤ)∧1∈dom(shelves(medType))∧shelves(medType)∈ℤ ⇸ ℤ∧(shelves(medType)(1)=medType⇒0∈dom(B1)∧B1∈ℤ ⇸ ℤ)" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#6"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#6"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm."/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Medicament_in/grd10/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm\/"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="medType∈dom(shelves)∧shelves∈ℤ ⇸ ℙ(ℤ × ℤ)∧0∈dom(shelves(medType))∧shelves(medType)∈ℤ ⇸ ℤ∧(shelves(medType)(0)=medType⇒1∈dom(B1)∧B1∈ℤ ⇸ ℤ)" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#7"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#7"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm\/"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Medicament_in/grd11/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm0"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="medType∈dom(shelves)∧shelves∈ℤ ⇸ ℙ(ℤ × ℤ)∧1∈dom(shelves(medType))∧shelves(medType)∈ℤ ⇸ ℤ∧(shelves(medType)(1)=medType⇒1∈dom(B1)∧B1∈ℤ ⇸ ℤ)" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#8"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#8"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Medicament_in/grd12/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm1"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="medType∈dom(shelves)∧shelves∈ℤ ⇸ ℙ(ℤ × ℤ)∧0∈dom(shelves(medType))∧shelves(medType)∈ℤ ⇸ ℤ" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#9"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#9"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Medicament_in/grd13/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm2"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="medType∈dom(shelves)∧shelves∈ℤ ⇸ ℙ(ℤ × ℤ)∧1∈dom(shelves(medType))∧shelves(medType)∈ℤ ⇸ ℤ" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#:"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#:"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Medicament_in/inv11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextm"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="B1{0 ↦ medType}∈0 ‥ 1 → 0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#?"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#?"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#Medicament_in\/inv11\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTPharmaContextm" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="B1'" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="medType" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPPharmaContextm)" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTIDENTPharmaContextm" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="B1(0)=0" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="medType∈1 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#."/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="⊤" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#\/"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPPharmaContextm*" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm)" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="¬shelves(medType)(1)=medType" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#0"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPPharmaContextm+" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm*" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="¬(B1(0)=medType∧B1(1)=medType)" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#1"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPPharmaContextm," org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm+" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="¬(B1(0)=medType∧E=medType)" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#2"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPPharmaContextm-" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm," org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="¬(B1(1)=medType∧E=medType)" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#3"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPPharmaContextm." org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm-" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="¬(shelves(medType)(0)=medType∧B1(0)=medType)" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#5"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPPharmaContextm/" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm." org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="¬(shelves(medType)(1)=medType∧B1(0)=medType)" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#6"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPPharmaContextm0" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm\/" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="¬(shelves(medType)(0)=medType∧B1(1)=medType)" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#7"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPPharmaContextm1" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm0" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="¬(shelves(medType)(1)=medType∧B1(1)=medType)" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#8"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPPharmaContextm2" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm1" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD11" org.eventb.core.predicate="¬(shelves(medType)(0)=medType∧E=medType)" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#9"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPPharmaContextm" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextm2" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD12" org.eventb.core.predicate="¬(shelves(medType)(1)=medType∧E=medType)" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#@|org.eventb.core.guard#:"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Request/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextn("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="medType∈dom(shelves)∧shelves∈ℤ ⇸ ℙ(ℤ × ℤ)∧0∈dom(shelves(medType))∧shelves(medType)∈ℤ ⇸ ℤ∧(shelves(medType)(0)≠0∨(0∈dom(B1)∧B1∈ℤ ⇸ ℤ∧(B1(0)=medType∨(1∈dom(B1)∧B1∈ℤ ⇸ ℤ))))" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#I|org.eventb.core.guard#."/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#I|org.eventb.core.guard#."/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextn("/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Request/inv15/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextn"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="medType∈0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#H"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#I"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#H"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#Request\/inv15\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTPharmaContextn" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="req'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="medType" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPPharmaContextn(" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTIDENTPharmaContextn" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="medType∈1 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#I|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="⊤" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#I|org.eventb.core.guard#-"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPPharmaContextn" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextn(" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="shelves(medType)(0)≠0∨B1(0)=medType∨B1(1)=medType∨E=medType" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#I|org.eventb.core.guard#."/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="req=0" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#I|org.eventb.core.guard#2"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Move_elevator_to/inv18/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContexto"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="targetLevel∈0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#P"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#S"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#P"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#Move_elevator_to\/inv18\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTPharmaContexto" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="E_level'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="targetLevel" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPPharmaContexto" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTIDENTPharmaContexto" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="targetLevel∈0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#S|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="E_level≠targetLevel" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#S|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Medicament_out/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTIDENTPharmaContextp"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1∈dom(B2)∧B2∈ℤ ⇸ ℤ" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#T|org.eventb.core.guard#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#T|org.eventb.core.guard#*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTIDENTPharmaContextp"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Medicament_out/inv17/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextp"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="B2{1 ↦ 0}∈0 ‥ 1 → 0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#L"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#T"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#L"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#Medicament_out\/inv17\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTPharmaContextp" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="B2'" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPPharmaContextp" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTIDENTPharmaContextp" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="B2(1)≠0" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#T|org.eventb.core.guard#*"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Shelves_to_elevator/grd4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextq)"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lvl∈dom(shelves)∧shelves∈ℤ ⇸ ℙ(ℤ × ℤ)∧0∈dom(shelves(lvl))∧shelves(lvl)∈ℤ ⇸ ℤ" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#U|org.eventb.core.guard#0"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#U|org.eventb.core.guard#0"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextq)"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Shelves_to_elevator/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextq"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lvl∈0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#="/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#U"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#="/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#Shelves_to_elevator\/inv9\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Shelves_to_elevator/inv16/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextq"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="shelves{lvl ↦ shelves(lvl){0 ↦ shelves(lvl)(1),1 ↦ 0}}∈1 ‥ 6 → (0 ‥ 1 → 0 ‥ 6)" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#K"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#U"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#K"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#Shelves_to_elevator\/inv16\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Shelves_to_elevator/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextq"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lvl∈dom(shelves)∧shelves∈ℤ ⇸ ℙ(ℤ × ℤ)∧1∈dom(shelves(lvl))∧shelves(lvl)∈ℤ ⇸ ℤ" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#U|org.eventb.core.action#."/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#U|org.eventb.core.action#."/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextq"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTPharmaContextq" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="lvl" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="E'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="shelves'" org.eventb.core.type="ℙ(ℤ×ℙ(ℤ×ℤ))"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPPharmaContextq)" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTIDENTPharmaContextq" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="E=0" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#U|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="E_level=lvl" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#U|org.eventb.core.guard#)"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="lvl∈1 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#U|org.eventb.core.guard#+"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPPharmaContextq" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextq)" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="shelves(lvl)(0)=req" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#U|org.eventb.core.guard#0"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Elevator_to_shelves/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextr"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#="/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#V"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#="/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#Elevator_to_shelves\/inv9\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Elevator_to_shelves/inv16/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextr"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="shelves{lvl ↦ shelves(lvl){1 ↦ shelves(lvl)(0),0 ↦ lvl}}∈1 ‥ 6 → (0 ‥ 1 → 0 ‥ 6)" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#K"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#V"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#K"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#Elevator_to_shelves\/inv16\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Elevator_to_shelves/act2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextr"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="lvl∈dom(shelves)∧shelves∈ℤ ⇸ ℙ(ℤ × ℤ)∧0∈dom(shelves(lvl))∧shelves(lvl)∈ℤ ⇸ ℤ" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#V|org.eventb.core.action#,"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#V|org.eventb.core.action#,"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextr"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTPharmaContextr" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="lvl" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="E'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="shelves'" org.eventb.core.type="ℙ(ℤ×ℙ(ℤ×ℤ))"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPPharmaContextr" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTIDENTPharmaContextr" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="E=lvl" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#V|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="E_level=lvl" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#V|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="lvl∈1 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#V|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="lvl≠req" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#V|org.eventb.core.guard#-"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="B1_to_elevator/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContexts("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1∈dom(B1)∧B1∈ℤ ⇸ ℤ" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#W|org.eventb.core.guard#)"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#W|org.eventb.core.guard#)"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContexts("/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="B1_to_elevator/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContexts"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="B1(1)∈0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#="/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#W"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#="/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#B1_to_elevator\/inv9\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="B1_to_elevator/inv11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContexts"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="B1{1 ↦ 0}∈0 ‥ 1 → 0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#?"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#W"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#?"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#B1_to_elevator\/inv11\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="B1_to_elevator/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContexts"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1∈dom(B1)∧B1∈ℤ ⇸ ℤ" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#W|org.eventb.core.action#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#W|org.eventb.core.action#*"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContexts"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTPharmaContexts" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="B1'" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="E'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPPharmaContexts(" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTIDENTPharmaContexts" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="E=0" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#W|org.eventb.core.guard#'"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="E_level=0" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#W|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPPharmaContexts" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContexts(" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="B1(1)≠0" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#W|org.eventb.core.guard#)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Elevator_to_B2/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextt'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈dom(B2)∧B2∈ℤ ⇸ ℤ" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#X|org.eventb.core.guard#("/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#X|org.eventb.core.guard#("/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextt'"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Elevator_to_B2/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextt"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#="/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#X"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#="/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#Elevator_to_B2\/inv9\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Elevator_to_B2/inv15/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextt"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#H"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#X"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#H"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#Elevator_to_B2\/inv15\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Elevator_to_B2/inv17/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextt"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="B2{0 ↦ E}∈0 ‥ 1 → 0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#L"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#X"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#L"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#Elevator_to_B2\/inv17\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTPharmaContextt" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="req'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="E'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="B2'" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPPharmaContextt'" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTIDENTPharmaContextt" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="E_level=0" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#X|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPPharmaContextt" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextt'" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="B2(0)=0" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#X|org.eventb.core.guard#("/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="E≠0" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#X|org.eventb.core.guard#+"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="E=req" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#X|org.eventb.core.guard#,"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Action_B1/grd1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTIDENTPharmaContextu"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈dom(B1)∧B1∈ℤ ⇸ ℤ" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#Y|org.eventb.core.guard#'"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#Y|org.eventb.core.guard#'"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTIDENTPharmaContextu"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Action_B1/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextu'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1∈dom(B1)∧B1∈ℤ ⇸ ℤ" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#Y|org.eventb.core.guard#("/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#Y|org.eventb.core.guard#("/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextu'"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Action_B1/inv11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextu"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="B1{0 ↦ 0,1 ↦ B1(0)}∈0 ‥ 1 → 0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#?"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#Y"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#?"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#Action_B1\/inv11\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Action_B1/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextu"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈dom(B1)∧B1∈ℤ ⇸ ℤ" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#Y|org.eventb.core.action#)"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#Y|org.eventb.core.action#)"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextu"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTPharmaContextu" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="B1'" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPPharmaContextu'" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTIDENTPharmaContextu" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="B1(0)≠0" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#Y|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPPharmaContextu" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextu'" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="B1(1)=0" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#Y|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Action_B2/grd1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTIDENTPharmaContextv"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈dom(B2)∧B2∈ℤ ⇸ ℤ" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#Z|org.eventb.core.guard#'"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#Z|org.eventb.core.guard#'"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTIDENTPharmaContextv"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Action_B2/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextv'"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1∈dom(B2)∧B2∈ℤ ⇸ ℤ" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#Z|org.eventb.core.guard#("/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#Z|org.eventb.core.guard#("/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextv'"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Action_B2/inv17/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextv"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="B2{0 ↦ 0,1 ↦ B2(0)}∈0 ‥ 1 → 0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#L"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#Z"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#L"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#Action_B2\/inv17\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="Action_B2/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextv"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈dom(B2)∧B2∈ℤ ⇸ ℤ" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#Z|org.eventb.core.action#)"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#Z|org.eventb.core.action#)"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextv"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTPharmaContextv" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="B2'" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPPharmaContextv'" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTIDENTPharmaContextv" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="B2(0)≠0" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#Z|org.eventb.core.guard#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPPharmaContextv" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTHYPPharmaContextv'" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="B2(1)=0" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#Z|org.eventb.core.guard#("/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="Move_elevator_to_right_lvl/inv18/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTALLHYPPharmaContextw"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="E∈0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#P"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.event#["/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#P"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poSequent#Move_elevator_to_right_lvl\/inv18\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTPharmaContextw" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="E_level'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPPharmaContextw" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#EVTIDENTPharmaContextw" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/RobotPharmacie/Pharmachine.bpo|org.eventb.core.poFile#Pharmachine|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="E∈0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#="/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="B1∈0 ‥ 1 → 0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#?"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="req∈0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#H"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="shelves∈1 ‥ 6 → (0 ‥ 1 → 0 ‥ 6)" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#K"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="B2∈0 ‥ 1 → 0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#L"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="E_level∈0 ‥ 6" org.eventb.core.source="/RobotPharmacie/Pharmachine.bum|org.eventb.core.machineFile#Pharmachine|org.eventb.core.invariant#P"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
